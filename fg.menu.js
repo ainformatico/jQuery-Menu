@@ -28,6 +28,7 @@ $.fn.menu = function(options){
 		else { m.kill(); };
 		return false;
 	});	
+	return m.container;
 };
 
 function Menu(caller, options){
@@ -37,6 +38,7 @@ function Menu(caller, options){
 	
 	this.menuOpen = false;
 	this.menuExists = false;
+	this.container = container;
 	
 	var options = jQuery.extend({
 		content: null,
